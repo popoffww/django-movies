@@ -17,7 +17,7 @@ from .models import Movie
 
 class MovieListView(ListView):
     model = Movie
-    queryset = Movie.objects.all()
+    queryset = Movie.objects.filter(draft=False)
 
 class MovieDetailView(DetailView):
     model = Movie
