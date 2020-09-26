@@ -1,0 +1,7 @@
+class MovieListView(ListView):
+    model = Movie
+    queryset = Movie.objects.all()
+
+class MovieDetailView(DetailView):
+    model = Movie
+    slug_field = 'url'
