@@ -39,7 +39,10 @@
                                 <a href="{{ movie.get_absolute_url }}
                                 "
                                    class="editContent">
-                                    {{ movie.title }}
+                                    <div class="slug-info">
+                                        {{ movie.title }} &raquo;
+                                        <i>slug - {{ movie.url }}</i>
+                                    </div>
                                 </a>
                             </h4>
 
